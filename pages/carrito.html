@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/main.css">
+    
+    <title>Fernan007do-Shop</title>
+</head>
+<body>
+    <div class="all">
+        <aside>
+            <header>
+                <h1 class="logo">Fernan007do-Shop</h1>
+            </header>
+            <nav>
+                <ul> 
+                    <li>
+                        <a class="btn-menu btn-back" href="../index.html">
+                            <i class="bi bi-arrow-90deg-left"></i>Seguir de compras
+                        </a>
+                    </li>
+                    <li>
+                        <a class="btn-menu btn-carrito active" href="./pages/carrito.html">
+                            <i class="bi bi-cart-check"></i>Carrito
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <footer>
+                <p class="footer-text">© Fer Enterprises 2022</p>
+            </footer>  
+        </aside>
+    
+        <main>
+            <h2 class="title">Carrito de compras</h2>
+            <div class="cart-container">
+                <p class="carrito-vacio">Tu carrito está vacío <i class="bi bi-emoji-frown"></i></p>
+
+                <div class="cart-products"> 
+
+                    <div class="cart-product">
+                        <img src="../img/camisetas/01.jpg" alt="">
+
+                        <div class="cart-name">
+                            <small>Titulo producto</small>
+                            <h3>Remera1</h3>
+                        </div>
+
+                        <div class="cart-cant">
+                            <small>Cantidad</small>
+                            <p>1</p>
+                        </div>
+
+                        <div class="cart-price">
+                            <small>Precio</small>
+                            <p>$200</p>
+                        </div>
+
+                        <div class="cart-subtotal">
+                            <small>Sub-Total</small>
+                            <p>$200</p>
+                        </div>
+
+                        <button class="cart-remove"><i class="bi bi-trash-fill"></i></button>
+
+                    </div>
+
+                    <div class="cart-product">
+                        <img src="../img/camisetas/02.jpg" alt="">
+
+                        <div class="cart-name">
+                            <small>Titulo producto</small>
+                            <h3>Remera2</h3>
+                        </div>
+
+                        <div class="cart-cant">
+                            <small>Cantidad</small>
+                            <p>1</p>
+                        </div>
+
+                        <div class="cart-price">
+                            <small>Precio</small>
+                            <p>$200</p>
+                        </div>
+
+                        <div class="cart-subtotal">
+                            <small>Sub-Total</small>
+                            <p>$200</p>
+                        </div>
+
+                        <button class="cart-remove"><i class="bi bi-trash-fill"></i></button>
+
+                    </div>
+
+                </div>
+
+                <div class="cart-actions">
+                    <div class="cart-left-actions">
+                        <button class="cart-actions-empty">Vaciar carrito</button>
+                    </div>
+
+                    <div class="cart-right-actions">
+                        <div class="cart-total">
+                            <p>Total</p>
+                            <p id="total">$1000</p>
+                        </div>
+                        <button class="cart-buy">Comprar ahora</button>
+                    </div>
+                </div>
+
+            </div>
+
+    
+        </main>
+    </div>
+    <script src="../javaScript/carrito.js"></script>
+</body>
+</html>

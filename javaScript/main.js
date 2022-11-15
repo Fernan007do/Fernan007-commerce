@@ -190,9 +190,16 @@ const categoryButtons= document.querySelectorAll(".btn-category");
 const mainTitle = document.querySelector(".title");
 let addButtons= document.querySelectorAll(".product-add");
 const cantidad = document.querySelector("#cantidad");
-let cantidadNum = 0;
+const cartProductsLS = JSON.parse(localStorage.getItem("cartProducts"));
+let cartProducts
 
-const cartProducts = []
+if (cartProductsLS){
+    cartProducts = cartProductsLS;
+    updateCantidad()
+}else{
+    cartProducts = [];
+}
+
 
 function renderProducts(chosenProducts) {
     productsContainer.innerHTML = "";
@@ -256,8 +263,7 @@ function addToCart (e) {
         cartProducts.push(addedProduct);
     }
     
-    cantidadNum += 1;
-    cantidad.innerText = `${cantidadNum}`
+    updateCantidad()
 
     /* Cada vez que se agrega algo al carrito, lo mando al Local Storage */
 
@@ -267,8 +273,8 @@ function addToCart (e) {
 
 
 
-/* Dejé esta funcion de lado porque ví más simple otro método */
-/* function updateCantidad () {
-    let cantidad = cartProducts.reduce((counter, product) => counter + product.cantidad, 0)
-} */
+function updateCantidad () {
+    let newCantidad = cartProducts.reduce((counter, product) => counter + product.cantidad, 0)
+    cantidad.innerText = newCantidad;
+}
 

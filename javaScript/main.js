@@ -184,3 +184,26 @@ const productos = [
         precio: 1000
     }
 ];
+
+const productsContainer = document.querySelector("#products-container");
+
+function renderProducts() {
+    productos.forEach( producto => {
+        let div = document.createElement("div")
+        div.classList.add("product")
+        div.innerHTML = `
+        <img class="product-image" src="${producto.imagen}" alt="${producto.titulo}">
+        <div class="product-details">
+            <h3 class="product-title">${producto.titulo}</h3>
+            <p class="product-price">$ ${producto.precio}</p>
+            <button class="product-add" id="${producto.id}"> Agregar</button>
+        </div>
+        `
+
+        productsContainer.append(div);
+    })
+
+}
+
+
+renderProducts();   

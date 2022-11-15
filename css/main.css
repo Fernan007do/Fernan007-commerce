@@ -30,9 +30,9 @@ a {
 .all{
     display: grid;
     grid-template-areas: 
-    "left content content content content"
-    "left content content content content"
-    "left content content content content";
+    "left content content content"
+    "left content content content"
+    "left content content content";
     background-color: var(--clr-main);
 }
 
@@ -112,6 +112,20 @@ aside {
     box-shadow: 0 -1rem 0 var(--clr-white);
 }
 
+.btn-cart.active .cantidad {
+    background-color: var(--clr-main);
+    color: var(--clr-white);
+
+}
+
+.cantidad{
+    background-color: var(--clr-white);
+    color: var(--clr-main);
+    padding: .15rem .25rem;
+    border-radius: .25rem;
+
+}
+
 .footer-text{
     color: var(--clr-gray);
     font-size: .85rem;
@@ -178,14 +192,14 @@ main {
 
 /* Carrito */
 
-cart-container{
+.cart-container{
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
 }
-.empty-cart{
+.empty-cart,
+.selled-cart {
     color: var(--clr-main);
-    display: none;
 }
 
 .cart-products{
@@ -244,7 +258,7 @@ cart-container{
     border: 0;
     background-color: var(--clr-main);
     padding: 1rem;
-    border-radius: 1rem;
+    border-radius:84% 16% 100% 0% / 0% 78% 22% 100% ;
     text-transform: uppercase;
     color: var(--clr-white);
     cursor: pointer;
@@ -258,8 +272,11 @@ cart-container{
     display: flex;
     background-color: var(--clr-gray);
     padding: 1rem;
-    border-radius: 1rem;
+    border-radius: 100% 0% 71% 29% / 26% 100% 0% 74% ;
     text-transform: uppercase;
     color: var(--clr-main);
-    cursor: pointer;
+}
+
+.disabled {
+    display: none;
 }

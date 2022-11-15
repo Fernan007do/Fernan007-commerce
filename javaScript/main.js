@@ -188,6 +188,11 @@ const productos = [
 const productsContainer = document.querySelector("#products-container");
 const categoryButtons= document.querySelectorAll(".btn-category");
 const mainTitle = document.querySelector(".title");
+let addButtons= document.querySelectorAll(".product-add");
+const cantidad = document.querySelector("#cantidad");
+let cantidadNum = 0;
+
+const cartProducts = []
 
 function renderProducts(chosenProducts) {
     productsContainer.innerHTML = "";
@@ -205,6 +210,8 @@ function renderProducts(chosenProducts) {
 
         productsContainer.append(div);
     })
+
+    updateAddButtons()
 
 }
 
@@ -230,4 +237,38 @@ categoryButtons.forEach(boton => {
 
 })
 
+function updateAddButtons () {
+    addButtons = document.querySelectorAll(".product-add")
+    addButtons.forEach(boton => {
+        boton.addEventListener("click", addToCart)
+    })
+}
+
+function addToCart (e) {
+    
+    const buttonId = e.currentTarget.id;
+    const addedProduct = productos.find(producto => producto.id === buttonId)
+    if(cartProducts.some(producto => producto.id === buttonId)){
+        addedProduct.cantidad += 1;
+        
+    }else{
+        addedProduct.cantidad = 1;
+        cartProducts.push(addedProduct);
+    }
+    
+    cantidadNum += 1;
+    cantidad.innerText = `${cantidadNum}`
+
+    /* Cada vez que se agrega algo al carrito, lo mando al Local Storage */
+
+    localStorage.setItem("cartProducts", JSON.stringify(cartProducts))
+
+}
+
+
+
+/* Dejé esta funcion de lado porque ví más simple otro método */
+/* function updateCantidad () {
+    let cantidad = cartProducts.reduce((counter, product) => counter + product.cantidad, 0)
+} */
 

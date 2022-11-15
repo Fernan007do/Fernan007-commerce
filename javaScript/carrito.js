@@ -1,22 +1,24 @@
- const cartProducts = JSON.parse(localStorage.getItem("cartProducts"));
- const emptyCartContainer = document.querySelector("#empty-cart");
- const selledCartContainer = document.querySelector("#selled-cart");
- const cartProductsContainer =  document.querySelector("#cart-products");
- const cartActionsContainer = document.querySelector("#cart-actions");
+let cartProducts = JSON.parse(localStorage.getItem("cartProducts"));
+const emptyCartContainer = document.querySelector("#empty-cart");
+const selledCartContainer = document.querySelector("#selled-cart");
+const cartProductsContainer = document.querySelector("#cart-products");
+const cartActionsContainer = document.querySelector("#cart-actions");
+let removeButtons = document.querySelectorAll(".cart-product__remove")
 
- if (cartProducts){
-    emptyCartContainer.classList.add("disabled");
-    cartProductsContainer.classList.remove("disabled");
-    cartActionsContainer.classList.remove("disabled");
-    selledCartContainer.classList.add("disabled");
-
-    cartProductsContainer.innerHTML = "";
-
-    cartProducts.forEach(product => {
-
-        let div = document.createElement("div")
-        div.classList.add("cart-product")
-        div.innerHTML = `
+function renderCartProducts () {
+    if (cartProducts && cartProducts.length > 0) {
+        emptyCartContainer.classList.add("disabled");
+        cartProductsContainer.classList.remove("disabled");
+        cartActionsContainer.classList.remove("disabled");
+        selledCartContainer.classList.add("disabled");
+    
+        cartProductsContainer.innerHTML = "";
+    
+        cartProducts.forEach(product => {
+    
+            let div = document.createElement("div")
+            div.classList.add("cart-product")
+            div.innerHTML = `
         <img class="cart-product__image" src=".${product.imagen}" alt="${product.titulo}">
         <div class="cart-product__name">
             <small>Titulo producto</small>
@@ -36,43 +38,33 @@
         </div>
         <button id="${product.id}" class="cart-product__remove"><i class="bi bi-trash-fill"></i></button>
         `
-        cartProductsContainer.append(div)
+            cartProductsContainer.append(div)
+        })
+    } else {
+        emptyCartContainer.classList.remove("disabled");
+        cartProductsContainer.classList.add("disabled");
+        cartActionsContainer.classList.add("disabled");
+        selledCartContainer.classList.add("disabled");
+    
+    }
+    updateRemoveButtons()
+}
+
+renderCartProducts()
+
+function updateRemoveButtons() {
+    removeButtons = document.querySelectorAll(".cart-product__remove")
+    removeButtons.forEach(boton => {
+        boton.addEventListener("click", removeFromCart)
     })
+}
 
+function removeFromCart (e) {
+    const buttonId = e.currentTarget.id 
+    const index = cartProducts.findIndex(p => p.id === buttonId)
 
+    cartProducts.splice(index, 1);
+    renderCartProducts()
 
-
-
-
- }else{
-
- }
-
-
-
-/*  <div class="cart-product">
- <img class="cart-product__image" src="../img/camisetas/01.jpg" alt="">
-
- <div class="cart-product__name">
-     <small>Titulo producto</small>
-     <h3>Remera1</h3>
- </div>
-
- <div class="cart-product__cant">
-     <small>Cantidad</small>
-     <p>1</p>
- </div>
-
- <div class="cart-product__price">
-     <small>Precio</small>
-     <p>$200</p>
- </div>
-
- <div class="cart-product__subtotal">
-     <small>Sub-Total</small>
-     <p>$200</p>
- </div>
-
- <button class="cart-product__remove"><i class="bi bi-trash-fill"></i></button>
-
-</div> */
+    localStorage.setItem('cartProducts', JSON.stringify(cartProducts))
+}

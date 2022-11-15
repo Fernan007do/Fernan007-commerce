@@ -200,7 +200,7 @@ if (cartProductsLS){
     cartProducts = [];
 }
 
-
+renderProducts(productos)
 function renderProducts(chosenProducts) {
     productsContainer.innerHTML = "";
     chosenProducts.forEach( producto => {

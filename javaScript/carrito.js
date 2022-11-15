@@ -4,6 +4,10 @@ const selledCartContainer = document.querySelector("#selled-cart");
 const cartProductsContainer = document.querySelector("#cart-products");
 const cartActionsContainer = document.querySelector("#cart-actions");
 let removeButtons = document.querySelectorAll(".cart-product__remove")
+const emptyCartButton = document.querySelector("#cart-actions-empty")
+const buyCartButton = document.querySelector("#cart-actions-buy")
+const total = document.querySelector("#total")
+
 
 function renderCartProducts () {
     if (cartProducts && cartProducts.length > 0) {
@@ -48,6 +52,7 @@ function renderCartProducts () {
     
     }
     updateRemoveButtons()
+    totalUpdate()   
 }
 
 renderCartProducts()
@@ -67,4 +72,28 @@ function removeFromCart (e) {
     renderCartProducts()
 
     localStorage.setItem('cartProducts', JSON.stringify(cartProducts))
+}
+
+emptyCartButton.addEventListener("click", emptyCart)
+buyCartButton.addEventListener("click", buyCart)
+
+function emptyCart () {
+    cartProducts.length = 0;
+    localStorage.setItem('cartProducts', JSON.stringify(cartProducts))
+    renderCartProducts()
+}
+
+function buyCart () {
+    cartProducts.length = 0;
+    localStorage.setItem('cartProducts', JSON.stringify(cartProducts))
+
+    emptyCartContainer.classList.add("disabled");
+    cartProductsContainer.classList.add("disabled");
+    cartActionsContainer.classList.add("disabled");
+    selledCartContainer.classList.remove("disabled");
+}
+
+function totalUpdate () {
+    const totalCalculado = cartProducts.reduce((acum, product) => acum + product.precio * product.cantidad, 0)
+    total.innerText = `$${totalCalculado}`
 }

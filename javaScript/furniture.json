@@ -1,0 +1,382 @@
+[
+    {
+        "id": "mueble-1",
+        "titulo" : "Armchair",
+        "categoria" : {
+            "id" : "muebles",
+            "nombre" : "Muebles"
+        },
+        "precio" : "50.25",
+        "imagen" : "../img/armchair.png"
+    },
+    {
+        "id": "mueble-2",
+        "titulo" : "Bed",
+        "categoria" : {
+            "id" : "muebles",
+            "nombre" : "Muebles"
+        }, 
+        "precio" : "102.00",
+        "imagen" : "../img/bed.png"
+    },
+    {
+        "id": "mueble-3",
+        "titulo" : "Bench",
+        "categoria" : {
+            "id" : "muebles",
+            "nombre" : "Muebles"
+        },
+        "precio" : "15.00",
+        "imagen" : "../img/bench.png"
+    },
+    {
+        "id": "mueble-4",
+        "titulo" : "Bunk bed",
+        "categoria" : {
+            "id" : "muebles",
+            "nombre" : "Muebles"
+        },
+        "precio" : "23.75",
+        "imagen" : "../img/bunk-bed.png"
+    },
+    {
+        "id": "mueble-5",
+        "titulo" : "Cabinet",
+        "categoria" : {
+            "id" : "muebles",
+            "nombre" : "Muebles"
+        },
+        "precio" : "50.00",
+        "imagen" : "../img/cabinet.png"
+    },
+    {
+        "id": "mueble-6",
+        "titulo" : "Card table",
+        "categoria" : {
+            "id" : "muebles",
+            "nombre" : "Muebles"
+        },
+        "precio" : "200.50",
+        "imagen" : "../img/card-table.png"
+    },
+    {
+        "id": "mueble-7",
+        "titulo" : "Cushion",
+        "categoria" : {
+            "id" : "muebles",
+            "nombre" : "Muebles"
+        },
+        "precio" : "5.50",
+        "imagen" : "../img/cushion.png"
+    },
+    {
+        "id": "mueble-8",
+        "titulo" : "Desk",
+        "categoria" : {
+            "id" : "muebles",
+            "nombre" : "Muebles"
+        },
+        "precio" : "25.00",
+        "imagen" : "../img/desk.png"
+    },
+    {
+        "id": "mueble-9",
+        "titulo" : "Drawer",
+        "categoria" : {
+            "id" : "muebles",
+            "nombre" : "Muebles"
+        },
+        "precio" : "49.00",
+        "imagen" : "../img/drawer.png"
+    },
+    {
+        "id": "mueble-10",
+        "titulo" : "Office chair",
+        "categoria" : {
+            "id" : "muebles",
+            "nombre" : "Muebles"
+        },
+        "precio" : "60.99",
+        "imagen" : "../img/office-chair.png"
+    },
+    {
+        "id": "mueble-11",
+        "titulo" : "Scissors chair",
+        "categoria" : {
+            "id" : "muebles",
+            "nombre" : "Muebles"
+        },
+        "precio" : "69.20",
+        "imagen" : "../img/scissors-chair.png"
+    },
+    {
+        "id": "mueble-12",
+        "titulo" : "Sleeper sofa",
+        "categoria" : {
+            "id" : "muebles",
+            "nombre" : "Muebles"
+        },
+        "precio" : "224.99",
+        "imagen" : "../img/sleeper-sofa.png"
+    },
+    {
+        "id": "mueble-13",
+        "titulo" : "Sleigh bed",
+        "categoria" : {
+            "id" : "muebles",
+            "nombre" : "Muebles"
+        },
+        "precio" : "90.25",
+        "imagen" : "../img/sleigh-bed.png"
+    },
+    {
+        "id": "mueble-14",
+        "titulo" : "Sofa bed",
+        "categoria" : {
+            "id" : "muebles",
+            "nombre" : "Muebles"
+        }, 
+        "precio" : "99.99",
+        "imagen" : "../img/sofa-bed.png"
+    },
+    {
+        "id": "mueble-15",
+        "titulo" : "White armchair",
+        "categoria" : {
+            "id" : "muebles",
+            "nombre" : "Muebles"
+        },
+        "precio" : "75.80",
+        "imagen" : "../img/white-armchair.png"
+    },
+    {
+        "id": "mueble-16",
+        "titulo" : "White sofa",
+        "categoria" : {
+            "id" : "muebles",
+            "nombre" : "Muebles"
+        },
+        "precio" : "159.00",
+        "imagen" : "../img/white-sofa.png"
+    },
+    {
+        "id": "mueble-17",
+        "titulo" : "Wing chair",
+        "categoria" : {
+            "id" : "muebles",
+            "nombre" : "Muebles"
+        },
+        "precio" : "100.50",
+        "imagen" : "../img/wing-chair.png"
+    },
+    {
+        "id": "mueble-18",
+        "titulo" : "Wooden armchair",
+        "categoria" : {
+            "id" : "muebles",
+            "nombre" : "Muebles"
+        },
+        "precio" : "187.45",
+        "imagen" : "../img/wooden-armchair.png"
+    },
+    {
+        "id": "mueble-19",
+        "titulo" : "Wooden dining table",
+        "categoria" : {
+            "id" : "muebles",
+            "nombre" : "Muebles"
+        },
+        "precio" : "322.50",
+        "imagen" : "../img/wooden-dining-table.png"
+    },
+    {
+        "id": "mueble-20",
+        "titulo" : "Wooden table",
+        "categoria" : {
+            "id" : "muebles",
+            "nombre" : "Muebles"
+        },
+        "precio" : "288.99",
+        "imagen" : "../img/wooden-table.png"
+    },
+    {
+        "id": "abrigo-01",
+        "titulo": "Abrigo 01",
+        "imagen": "./img/abrigos/01.jpg",
+        "categoria": {
+            "nombre": "Abrigos",
+            "id": "abrigos"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "abrigo-02",
+        "titulo": "Abrigo 02",
+        "imagen": "./img/abrigos/02.jpg",
+        "categoria": {
+            "nombre": "Abrigos",
+            "id": "abrigos"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "abrigo-03",
+        "titulo": "Abrigo 03",
+        "imagen": "./img/abrigos/03.jpg",
+        "categoria": {
+            "nombre": "Abrigos",
+            "id": "abrigos"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "abrigo-04",
+        "titulo": "Abrigo 04",
+        "imagen": "./img/abrigos/04.jpg",
+        "categoria": {
+            "nombre": "Abrigos",
+            "id": "abrigos"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "abrigo-05",
+        "titulo": "Abrigo 05",
+        "imagen": "./img/abrigos/05.jpg",
+        "categoria": {
+            "nombre": "Abrigos",
+            "id": "abrigos"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "camiseta-01",
+        "titulo": "Camiseta 01",
+        "imagen": "./img/camisetas/01.jpg",
+        "categoria": {
+            "nombre": "Camisetas",
+            "id": "camisetas"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "camiseta-02",
+        "titulo": "Camiseta 02",
+        "imagen": "./img/camisetas/02.jpg",
+        "categoria": {
+            "nombre": "Camisetas",
+            "id": "camisetas"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "camiseta-03",
+        "titulo": "Camiseta 03",
+        "imagen": "./img/camisetas/03.jpg",
+        "categoria": {
+            "nombre": "Camisetas",
+            "id": "camisetas"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "camiseta-04",
+        "titulo": "Camiseta 04",
+        "imagen": "./img/camisetas/04.jpg",
+        "categoria": {
+            "nombre": "Camisetas",
+            "id": "camisetas"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "camiseta-05",
+        "titulo": "Camiseta 05",
+        "imagen": "./img/camisetas/05.jpg",
+        "categoria": {
+            "nombre": "Camisetas",
+            "id": "camisetas"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "camiseta-06",
+        "titulo": "Camiseta 06",
+        "imagen": "./img/camisetas/06.jpg",
+        "categoria": {
+            "nombre": "Camisetas",
+            "id": "camisetas"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "camiseta-07",
+        "titulo": "Camiseta 07",
+        "imagen": "./img/camisetas/07.jpg",
+        "categoria": {
+            "nombre": "Camisetas",
+            "id": "camisetas"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "camiseta-08",
+        "titulo": "Camiseta 08",
+        "imagen": "./img/camisetas/08.jpg",
+        "categoria": {
+            "nombre": "Camisetas",
+            "id": "camisetas"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "pantalon-01",
+        "titulo": "Pantalón 01",
+        "imagen": "./img/pantalones/01.jpg",
+        "categoria": {
+            "nombre": "Pantalones",
+            "id": "pantalones"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "pantalon-02",
+        "titulo": "Pantalón 02",
+        "imagen": "./img/pantalones/02.jpg",
+        "categoria": {
+            "nombre": "Pantalones",
+            "id": "pantalones"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "pantalon-03",
+        "titulo": "Pantalón 03",
+        "imagen": "./img/pantalones/03.jpg",
+        "categoria": {
+            "nombre": "Pantalones",
+            "id": "pantalones"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "pantalon-04",
+        "titulo": "Pantalón 04",
+        "imagen": "./img/pantalones/04.jpg",
+        "categoria": {
+            "nombre": "Pantalones",
+            "id": "pantalones"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "pantalon-05",
+        "titulo": "Pantalón 05",
+        "imagen": "./img/pantalones/05.jpg",
+        "categoria": {
+            "nombre": "Pantalones",
+            "id": "pantalones"
+        },
+        "precio": 1000
+    }
+]

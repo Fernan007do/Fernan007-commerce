@@ -1,6 +1,6 @@
 
-const adress = "./forniture.json"
-fetch(adress)
+
+fetch('productos.json')
     .then((resp) => resp.json() )
     .then((data) => { 
         renderProducts(data)

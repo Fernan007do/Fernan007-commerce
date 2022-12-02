@@ -1,12 +1,10 @@
-
-
+let productos = [];
 fetch('productos.json')
     .then((resp) => resp.json() )
     .then((data) => { 
+        productos = data;
         renderProducts(data)
     })
-
-
 
 const productsContainer = document.querySelector("#products-container");
 const categoryButtons= document.querySelectorAll(".btn-category");
@@ -23,7 +21,6 @@ if (cartProductsLS){
     cartProducts = [];
 }
 
-renderProducts(productos)
 function renderProducts(chosenProducts) {
     productsContainer.innerHTML = "";
     chosenProducts.forEach( producto => {

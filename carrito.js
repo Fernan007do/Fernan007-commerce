@@ -26,7 +26,7 @@ function renderCartProducts () {
         <img class="cart-product__image" src=".${product.imagen}" alt="${product.titulo}">
         <div class="cart-product__name">
             <small>Titulo producto</small>
-            <h3>${product.id}</h3>
+            <h3>${product.titulo}</h3>
         </div>
         <div class="cart-product__cant">
             <small>Cantidad</small>

@@ -137,7 +137,7 @@ main {
    margin: 1rem;
    margin-left: 0;
    padding: 2rem;
-   border-radius: 98% 2% 100% 0% / 2% 98% 2% 98%  ;
+   
 }
 
 .title{
@@ -145,6 +145,12 @@ main {
     margin-bottom: 2rem;
 }
 
+.product {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 1rem;
+}
 .products-container{
     display: grid;
     grid-template-columns: repeat(4, 1fr);

@@ -7,7 +7,7 @@
             "nombre" : "Muebles"
         },
         "precio" : "50.25",
-        "imagen" : "../img/armchair.png"
+        "imagen" : "./img/armchair.png"
     },
     {
         "id": "mueble-2",
@@ -17,7 +17,7 @@
             "nombre" : "Muebles"
         }, 
         "precio" : "102.00",
-        "imagen" : "../img/bed.png"
+        "imagen" : "./img/bed.png"
     },
     {
         "id": "mueble-3",
@@ -27,7 +27,7 @@
             "nombre" : "Muebles"
         },
         "precio" : "15.00",
-        "imagen" : "../img/bench.png"
+        "imagen" : "./img/bench.png"
     },
     {
         "id": "mueble-4",
@@ -37,7 +37,7 @@
             "nombre" : "Muebles"
         },
         "precio" : "23.75",
-        "imagen" : "../img/bunk-bed.png"
+        "imagen" : "./img/bunk-bed.png"
     },
     {
         "id": "mueble-5",
@@ -47,7 +47,7 @@
             "nombre" : "Muebles"
         },
         "precio" : "50.00",
-        "imagen" : "../img/cabinet.png"
+        "imagen" : "./img/cabinet.png"
     },
     {
         "id": "mueble-6",
@@ -57,7 +57,7 @@
             "nombre" : "Muebles"
         },
         "precio" : "200.50",
-        "imagen" : "../img/card-table.png"
+        "imagen" : "./img/card-table.png"
     },
     {
         "id": "mueble-7",
@@ -67,7 +67,7 @@
             "nombre" : "Muebles"
         },
         "precio" : "5.50",
-        "imagen" : "../img/cushion.png"
+        "imagen" : "./img/cushion.png"
     },
     {
         "id": "mueble-8",
@@ -77,7 +77,7 @@
             "nombre" : "Muebles"
         },
         "precio" : "25.00",
-        "imagen" : "../img/desk.png"
+        "imagen" : "./img/desk.png"
     },
     {
         "id": "mueble-9",
@@ -87,7 +87,7 @@
             "nombre" : "Muebles"
         },
         "precio" : "49.00",
-        "imagen" : "../img/drawer.png"
+        "imagen" : "./img/drawer.png"
     },
     {
         "id": "mueble-10",
@@ -97,7 +97,7 @@
             "nombre" : "Muebles"
         },
         "precio" : "60.99",
-        "imagen" : "../img/office-chair.png"
+        "imagen" : "./img/office-chair.png"
     },
     {
         "id": "mueble-11",
@@ -107,7 +107,7 @@
             "nombre" : "Muebles"
         },
         "precio" : "69.20",
-        "imagen" : "../img/scissors-chair.png"
+        "imagen" : "./img/scissors-chair.png"
     },
     {
         "id": "mueble-12",
@@ -117,7 +117,7 @@
             "nombre" : "Muebles"
         },
         "precio" : "224.99",
-        "imagen" : "../img/sleeper-sofa.png"
+        "imagen" : "./img/sleeper-sofa.png"
     },
     {
         "id": "mueble-13",
@@ -127,7 +127,7 @@
             "nombre" : "Muebles"
         },
         "precio" : "90.25",
-        "imagen" : "../img/sleigh-bed.png"
+        "imagen" : "./img/sleigh-bed.png"
     },
     {
         "id": "mueble-14",
@@ -137,7 +137,7 @@
             "nombre" : "Muebles"
         }, 
         "precio" : "99.99",
-        "imagen" : "../img/sofa-bed.png"
+        "imagen" : "./img/sofa-bed.png"
     },
     {
         "id": "mueble-15",
@@ -147,7 +147,7 @@
             "nombre" : "Muebles"
         },
         "precio" : "75.80",
-        "imagen" : "../img/white-armchair.png"
+        "imagen" : "./img/white-armchair.png"
     },
     {
         "id": "mueble-16",
@@ -157,7 +157,7 @@
             "nombre" : "Muebles"
         },
         "precio" : "159.00",
-        "imagen" : "../img/white-sofa.png"
+        "imagen" : "./img/white-sofa.png"
     },
     {
         "id": "mueble-17",
@@ -167,7 +167,7 @@
             "nombre" : "Muebles"
         },
         "precio" : "100.50",
-        "imagen" : "../img/wing-chair.png"
+        "imagen" : "./img/wing-chair.png"
     },
     {
         "id": "mueble-18",
@@ -177,7 +177,7 @@
             "nombre" : "Muebles"
         },
         "precio" : "187.45",
-        "imagen" : "../img/wooden-armchair.png"
+        "imagen" : "./img/wooden-armchair.png"
     },
     {
         "id": "mueble-19",
@@ -187,7 +187,7 @@
             "nombre" : "Muebles"
         },
         "precio" : "322.50",
-        "imagen" : "../img/wooden-dining-table.png"
+        "imagen" : "./img/wooden-dining-table.png"
     },
     {
         "id": "mueble-20",
@@ -197,7 +197,7 @@
             "nombre" : "Muebles"
         },
         "precio" : "288.99",
-        "imagen" : "../img/wooden-table.png"
+        "imagen" : "./img/wooden-table.png"
     },
     {
         "id": "abrigo-01",

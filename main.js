@@ -27,11 +27,20 @@ function renderProducts(chosenProducts) {
         let div = document.createElement("div")
         div.classList.add("product")
         div.innerHTML = `
-        <img class="product-image" src="${producto.imagen}" alt="${producto.titulo}">
+        <div class="imgBx">
+            <img class="product-image" src="${producto.imagen}" alt="${producto.titulo}">
+            <ul class="action">
+                <li>
+                    <button class="product-add" id="${producto.id}">
+                        <i class="bi bi-cart-plus"></i>
+                        <span>Add to cart</span>
+                    </button>
+                </li>
+            </ul>
+        </div>
         <div class="product-details">
             <h3 class="product-title">${producto.titulo}</h3>
             <p class="product-price">$ ${producto.precio}</p>
-            <button class="product-add" id="${producto.id}"> Agregar</button>
         </div>
         `
 
